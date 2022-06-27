@@ -5,74 +5,117 @@
     font-family: 'Sacramento', cursive;
     font-family: 'Yrsa', serif;
 */
-*{
+* {
     margin: 0%;
-    padding: 0%;
-}
-/*********************** ETIQUETAS DE CLASE **************************/
-body{
-    color: whitesmoke;
-}
-
-
-body div header{
-    background: radial-gradient(circle, rgb(44, 43, 43), rgb(151, 150, 150));
-
-}
-
-body div footer{
-    background-color: rgb(40, 43, 43);
-}
-/********************************************************************/
-
-
-/********************* ETIQUETAS ESPECIFICAS ************************/
-.mySelectedBackgroundStyle{
+    padding: 0%; }
+  
+  /*********************** ETIQUETAS DE CLASE **************************/
+  body {
+    color: whitesmoke; }
+    body div header {
+      background: radial-gradient(circle, #2c2b2b, #979696); }
+    body div footer {
+      background-color: #2c2b2b; }
+  
+  /********************************************************************/
+  /********************* ETIQUETAS ESPECIFICAS ************************/
+  .icon-container a {
+    background-image: url("img/logo.jpg"); }
+  
+  .padreBoton {
+    display: grid; }
+    .padreBoton .navbar-toggler {
+      justify-self: end;
+      align-self: end; }
+  
+  .card-body {
+    display: grid; }
+    .card-body a {
+      align-self: end;
+      justify-self: center; }
+  
+  .mySelectedBackgroundStyle {
     background-image: url(../img/316707.jpg);
     /*background-size: cover;*/
-    margin:0%;
-    padding: 0%;
-}
-
-.menuTextStyle{
-    font-family: 'Courier New', Courier, monospace;
+    margin: 0%;
+    padding: 0%; }
+  
+  .menuTextStyle {
+    font-family: 'Yrsa', serif;
     text-transform: uppercase;
     text-transform: bold;
-    font-size: 1.4rem;
-    transition: 0.3s;
-}
-
-.menuTextStyle:hover{
+    font-size: 1.6rem;
+    transition: 0.3s; }
+  
+  .menuTextStyle:hover {
     text-decoration: underline;
-    font-size: 1.6rem;
-}
-
-.bg-card-backround{
-    background-color: rgb(194, 194, 194);
-}
-
-.bg-whitesmoke{
-    background-color: whitesmoke;
-}
-
-.myCarouselStyle{
+    font-size: 1.8rem; }
+  
+  .card-container {
+    background-color: #c2c2c2;
+    box-shadow: 8px 6px 10px black; }
+  
+  .bg-whitesmoke {
+    background-color: whitesmoke; }
+  
+  .myCarouselStyle {
     width: 50%;
-    height: auto;
-}
-
-.mySloganStyle{
-    margin-left: 10%;
-    margin-right: 10%;
+    height: auto; }
+  
+  .mySloganStyle {
     font-size: 1.6rem;
-    font-family: 'Yrsa', serif;
-}
-
-.myAccordionConteiner{
+    font-family: 'Yrsa', serif; }
+  
+  .myAccordionConteiner {
     margin-left: 5%;
-    margin-right: 5%;
-}
-
-.myAccordionItem{
+    margin-right: 5%; }
+  
+  .myAccordionItem {
     padding-left: 10%;
-    padding-right: 10%;
-}
+    padding-right: 10%; }
+  
+  .myFormContainer {
+    display: grid;
+    grid-template-areas: "formTittle formTittle" "userName userName" "userNameInput userNameInput" "userEmail userEmail" "userEmailInput userEmailInput" "modeOp modeOp" "modeOpInput modeOpInput" "sendForm restoreForm";
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.4rem; }
+  
+  .formTittle {
+    grid-area: formTittle;
+    font-size: 1.6rem; }
+  
+  .userName {
+    grid-area: userName;
+    align-self: flex-end; }
+  
+  .userNameInput {
+    grid-area: userNameInput;
+    align-self: flex-start;
+    background-color: whitesmoke;
+    box-shadow: 10% 10% black; }
+  
+  .userEmail {
+    grid-area: userEmail;
+    align-self: flex-end; }
+  
+  .userEmailInput {
+    grid-area: userEmailInput;
+    align-self: flex-start; }
+  
+  .modeOp {
+    grid-area: modeOp;
+    align-self: end; }
+  
+  .modeOpInput {
+    grid-area: modeOpInput;
+    align-self: flex-start; }
+  
+  .sendForm {
+    grid-area: sendForm; }
+  
+  .restoreForm {
+    grid-area: restoreForm; }
+  
