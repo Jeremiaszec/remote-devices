@@ -118,4 +118,191 @@
   
   .restoreForm {
     grid-area: restoreForm; }
+
+  footer{
+    padding-top: 1%;
+  }
+
+  footer div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    cursor: pointer;
+    gap: 2%;
+  }
+
+  footer p{
+    margin-top: 1%;
+  }
+
+  .icon{
+    position: relative;
+    width: 80px;
+    height: 80%;
+    border-radius: 50%;
+    transition: all .8s;
+  }
+
+  .icon:hover{
+    background-color: #e60073;
+    box-shadow: 0 0 20px #e60073;
+  }
+
+  .icon:hover:nth-child(2){
+    background-color: #25d366;
+    box-shadow: 0 0 20px #25d366;
+  }
+
+  .icon:hover:nth-child(3){
+    background-color: #1877f2;
+    box-shadow: 0 0 20px #1877f2;
+  }
+
+  .icon:hover:nth-child(4){
+    background-color: #1da1f2;
+    box-shadow: 0 0 20px #1da1f2;
+  }
+
+  .icon i{
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    font-size: 1.7rem;
+  }
+
+  svg circle{
+    stroke-dasharray: 150;
+    transition: all .4s ease-in-out;
+  }
+
+  .icon:hover circle{
+    stroke-dasharray: 220;
+  }
   
+
+  .mainVisualizacion{
+    display: grid;
+    grid-template-areas: "introVisualizacion introVisualizacion"
+                          "contenidoVisualizacion imagenVisualizacion";
+  
+    align-items: center;
+    justify-content: center;                
+  }
+
+  .contenidoVisualizacion{
+    grid-area: contenidoVisualizacion;
+    margin-left: 5%;
+    margin-top: 1%;
+    align-self: start;
+    font-family: 'Parisienne', cursive;
+    font-size: 1.8rem;
+  }
+
+  .introVisualizacion{
+    grid-area: introVisualizacion;
+    margin-top: 1%;
+    background: radial-gradient(circle, #cec9c9, #979696);
+    opacity: .6;
+  }
+
+  .introVisualizacion p{
+    font-size: 1.9rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    color: black;
+  }
+
+  .imagenVisualizacion{
+    grid-area: imagenVisualizacion;
+    height: 500px;
+    width: 500px;
+  }
+
+  .imagenVisualizacion img{
+    margin-top: 5%;
+    border-radius: 5%;
+    box-shadow: 6px 6px 10px black;
+  }
+
+  .mainActuadores{
+    display: grid;
+    grid-template-areas: "introActuadores introActuadores"
+                          "bannerActuadores imagenPpalActuadores"
+                          "bannerActuadores contenidoActuadores";
+  }
+
+  .introActuadores{
+    grid-area: introActuadores;
+    font-size: 1.8rem;
+    font-family: 'Times New Roman', Times, serif; 
+  }
+
+  .bannerActuadores{
+    grid-area: bannerActuadores;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
+
+  .imagenPpalActuadores{
+    grid-area: imagenPpalActuadores;
+    align-self: center;
+  }
+
+  .imagenPpalActuadores img{
+    height: 400px;
+    width: 400px;
+    border-radius: 5%;
+  }
+
+  .contenidoActuadores{
+    grid-area: contenidoActuadores;
+    font-size: 1.6rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  @media screen and (max-width: 900px){
+    .mainVisualizacion{
+      display: grid;
+      grid-template-areas: "introVisualizacion"
+                           "imagenVisualizacion"                       
+                           "contenidoVisualizacion";               
+      justify-content: center;
+      align-items: center; 
+    } 
+  
+    .imagenVisualizacion{
+      grid-area: imagenVisualizacion;
+      height: 100%;
+      width: 100%;
+    }  
+    
+    .contenidoVisualizacion{
+      margin-left: 0%;
+    }
+
+    .mainActuadores{
+      display: grid;
+      grid-template-areas:  "introActuadores"
+                            " imagenPpalActuadores"
+                            " contenidoActuadores";
+    }
+
+    .imagenPpalActuadores img{
+      height: 400px;
+      width: 400px;
+      border-radius: 5%;
+    }
+  
+    .contenidoActuadores{
+      grid-area: contenidoActuadores;
+      font-size: 1.4rem;
+      font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .bannerActuadores{
+      display: none;
+    }
+  }  
